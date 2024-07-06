@@ -1,0 +1,142 @@
+@import "../Abstact/Colors";
+@import "../Mixin/Mixin";
+
+.container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 90vh;
+  .left-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-up 2s;
+
+    @keyframes slide-up {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+    .circle-shadow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 568px;
+      height: 565px;
+      border-radius: 50%;
+      border: 6px solid $text;
+      .menu {
+        list-style-type: none;
+        padding: 0;
+        display: grid;
+        margin: auto;
+        animation: rotating 8s linear infinite;
+
+        @keyframes rotating {
+            from {
+                transform: rotate(0deg);
+            }
+      
+            to {
+                transform: rotate(360deg);
+            }
+          }
+        li {
+          --d: 280px;
+          grid-area: 1/1;
+          transform: rotate(var(--r)) translateX(var(--d))
+            rotate(calc(-1 * var(--r)));
+          a {
+            display: block;
+            img {
+              width: 75px;
+              animation: rotating-back 8s linear infinite;
+
+              @keyframes rotating-back {
+                  from {
+                      transform: rotate(0deg);
+                  }
+            
+                  to {
+                      transform: rotate(-360deg);
+                  }
+                }
+            }
+          }
+        }
+      }
+
+      .menu:hover {
+        animation-play-state: paused;
+      }
+      /* adjust the angle for each icon */
+      .menu li:nth-child(1) {
+        --r: -90deg;
+      }
+      .menu li:nth-child(2) {
+        --r: 150deg;
+      }
+      .menu li:nth-child(3) {
+        --r: 30deg;
+      }
+
+      .pic {
+        position: absolute;
+        width: 446.88px;
+        height: 450px;
+        border-radius: 50%;
+        border: 5px solid $background;
+        box-shadow: 0px 0px 140px 140px $shadow;
+      }
+    }
+  }
+  .right-div {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slide-down 1.5s;
+    overflow: hidden;
+
+    @keyframes slide-down {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+    .name {
+      color: $text;
+      @include ubuntu_bold_italic;
+      font-size: 42px;
+    }
+    .subtext {
+      color: $unselect_text;
+      @include ubuntu_bold_italic;
+      font-size: 37px;
+      span:nth-of-type(1) {
+        color: #3951ce;
+      }
+      span:nth-of-type(2) {
+        color: #bf7530;
+      }
+      span:nth-of-type(3) {
+        color: #ce3e2a;
+      }
+    }
+    .hello {
+      color: $text;
+      @include ubuntu_bold_italic;
+      font-size: 35px;
+    }
+  }
+}
