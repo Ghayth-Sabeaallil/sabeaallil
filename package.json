@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ghayth-sabeaallil.github.io/",
+  "homepage": "https://ghayth-sabeaallil.github.io/sabeaallil",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
