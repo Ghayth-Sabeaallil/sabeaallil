@@ -1,0 +1,124 @@
+@import "../Abstact/Colors";
+@import "../Mixin/Mixin";
+
+//Laptop / Desktop
+@media only screen and (min-width: 1024px) {
+  .btn {
+    background-color: #032D4C;
+    color: #4E88B4;
+    @include ubuntu_regular_bold;
+    font-size: calc(1vw + 1vh);
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    grid-column: 4 / 7;
+    border-top: 2px solid $background;
+    border-bottom: 2px solid $background;
+    border-left: none;
+    border-right: none;
+    background-image: linear-gradient(#5AFFB7, #5AFFB7);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.5s, color 0.5s;
+    animation: show-up 2s;
+    z-index: 1;
+    border-top: 3px solid #4E88B4;
+    border-bottom: 3px solid #4E88B4;
+
+    @keyframes show-up {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  .btn:hover {
+    background-size: 100% 100%;
+    color: #032D4C;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+  .btn {
+    background-color: #032D4C;
+    color: #4E88B4;
+    @include ubuntu_regular_bold;
+    font-size: calc(1vw + 1vh);
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    grid-column: 4 / 7;
+    border-top: 2px solid $background;
+    border-bottom: 2px solid $background;
+    border-left: none;
+    border-right: none;
+    background-image: linear-gradient(#5AFFB7, #5AFFB7);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.5s, color 0.5s;
+    animation: show-up 2s;
+    z-index: 1;
+    border-top: 3px solid #4E88B4;
+    border-bottom: 3px solid #4E88B4;
+
+    @keyframes show-up {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  .btn:hover {
+    background-size: 100% 100%;
+    color: #032D4C;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .btn {
+    background-color: #032D4C;
+    color: #4E88B4;
+    @include ubuntu_regular_bold;
+    font-size: calc(1vw + 1vh);
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    grid-column: 4 / 7;
+    border-top: 2px solid $background;
+    border-bottom: 2px solid $background;
+    border-left: none;
+    border-right: none;
+    background-image: linear-gradient(#5AFFB7, #5AFFB7);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.5s, color 0.5s;
+    animation: show-up 2s;
+    z-index: 1;
+    border-top: 3px solid #4E88B4;
+    border-bottom: 3px solid #4E88B4;
+
+    @keyframes show-up {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  .btn:hover {
+    background-size: 100% 100%;
+    color: #032D4C;
+  }
+}

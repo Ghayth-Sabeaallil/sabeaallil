@@ -1,17 +1,20 @@
 import "../../Style/Components/Main.scss";
+import Button from "../Button/Button";
 /*
 <img className="pic" src="/pic.jpeg" alt="pic" />
  */
 
 const Main = () => {
+    const handleClick = () => {
+
+    }
     return (
         <>
-            <main>
+            <main id="home-section">
                 <div className="container">
                     <div className="left-div">
                         <div className="circle-shadow">
                             <img className="pic" src="/pic.jpeg" alt="pic" />
-
                             <ul className="menu">
                                 <li>
                                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/Ghayth-Sabeaallil">
@@ -33,11 +36,12 @@ const Main = () => {
                     </div>
                     <div className="right-div">
                         <h1 className="name">GHAYTH SABEAALLIL</h1>
-                        <h2 className="subtext">
-                            &lt;/ <span>Front</span> <span>End</span> <span>Developer</span>{" "}
-                            &gt;
-                        </h2>
-                        <h2 className="hello">Hello World!👋</h2>
+                        <div className="subtext">
+                            <div className="typing-text">  &lt;/ <span>Front</span> <span>End</span> <span>Developer</span>{" "}
+                                &gt;</div>
+
+                        </div>
+                        <Button text={"See my Resums"} handleClick={handleClick} />
                     </div>
                 </div>
             </main>
