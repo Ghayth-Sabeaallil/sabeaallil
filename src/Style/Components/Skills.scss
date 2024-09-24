@@ -15,6 +15,8 @@
       grid-template-rows: repeat(4);
       align-items: center;
       justify-items: center;
+      padding: calc(2.5vw + 2.5vh) 0 calc(2.5vw + 2.5vh) 0;
+
       .circle {
         width: calc(5vw + 5vh);
         height: calc(5vw + 5vh);
@@ -47,7 +49,7 @@
         }
       }
     }
-    .right-div {
+    .right-div-skills {
       flex-grow: 1;
       flex-basis: 50%;
       display: flex;
@@ -63,15 +65,15 @@
           0 -4px $shadow, 3px 3px $shadow, -3px -3px $shadow, 3px -3px $shadow,
           -3px 3px $shadow;
       }
-      animation: slide-show-up 2s;
-      @keyframes slide-show-up {
+      animation: slide-show-up-skills 2s;
+      @keyframes slide-show-up-skills {
         from {
-          transform: translateY(100%);
+          transform: translateX(100%);
           opacity: 0;
         }
 
         to {
-          transform: translateY(0%);
+          transform: translateX(0%);
           opacity: 1;
         }
       }
@@ -93,6 +95,8 @@
       grid-template-rows: repeat(4);
       align-items: center;
       justify-items: center;
+      padding: calc(3.5vw + 3.5vh) 0 calc(2.5vw + 2.5vh) 0;
+
       .circle {
         width: calc(5vw + 5vh);
         height: calc(5vw + 5vh);
@@ -125,7 +129,7 @@
         }
       }
     }
-    .right-div {
+    .right-div-skills {
       flex-grow: 1;
       flex-basis: 50%;
       display: flex;
@@ -141,15 +145,15 @@
           0 -4px $shadow, 3px 3px $shadow, -3px -3px $shadow, 3px -3px $shadow,
           -3px 3px $shadow;
       }
-      animation: slide-show-up 2s;
-      @keyframes slide-show-up {
+      animation: slide-show-up-skills 2s;
+      @keyframes slide-show-up-skills {
         from {
-          transform: translateY(-100%);
+          transform: translateX(100%);
           opacity: 0;
         }
 
         to {
-          transform: translateY(0%);
+          transform: translateX(0%);
           opacity: 1;
         }
       }
@@ -171,6 +175,8 @@
       grid-template-rows: repeat(4);
       align-items: center;
       justify-items: center;
+      padding: calc(2.5vw + 2.5vh) 0 calc(2.5vw + 2.5vh) 0;
+
       .circle {
         width: calc(5vw + 5vh);
         height: calc(5vw + 5vh);
@@ -203,7 +209,7 @@
         }
       }
     }
-    .right-div {
+    .right-div-skills {
       flex-grow: 1;
       flex-basis: 50%;
       display: flex;
@@ -219,15 +225,15 @@
           0 -4px $shadow, 3px 3px $shadow, -3px -3px $shadow, 3px -3px $shadow,
           -3px 3px $shadow;
       }
-      animation: slide-show-up 2s;
-      @keyframes slide-show-up {
+      animation: slide-show-up-skills 2s;
+      @keyframes slide-show-up-skills {
         from {
-          transform: translateY(-100%);
+          transform: translateX(100%);
           opacity: 0;
         }
 
         to {
-          transform: translateY(0%);
+          transform: translateX(0%);
           opacity: 1;
         }
       }

@@ -1,8 +1,4 @@
 import "../../Style/Components/Skills.scss";
-/*
-<img className="pic" src="/pic.jpeg" alt="pic" />
- */
-
 const Skills = () => {
     const skills: string[] = ["html5", "css3", "sass", "javascript", "typescript", "java", "github", "tailwindcss", "vitejs", "mysql", "nextjs", "react", "docker", "figma", "git", "intellij", "vim", "trello", "ubuntu", "vscode"]
     return (
@@ -16,7 +12,7 @@ const Skills = () => {
                     </>))}
 
                 </div>
-                <div className="right-div">
+                <div className="right-div-skills">
                     <h1 className="name">Skills</h1>
                 </div>
             </div>
