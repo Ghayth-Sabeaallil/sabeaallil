@@ -42,7 +42,7 @@ const Header = () => {
     return (
         <>
             <header className="navbar-dekstop">
-                <a className="logo" href="/"><img src="/LOGO.svg" alt="logo" /></a>
+                <a className="logo" href="/"><img src="./LOGO.svg" alt="logo" /></a>
                 <nav className="middle-items">
                     <a className="middle" onClick={() => handleScrollToSection('projects-section')}>PROJECTS</a>
                     <a className="middle" onClick={() => handleScrollToSection('home-section')}>HOME</a>
@@ -50,7 +50,7 @@ const Header = () => {
                 </nav>
             </header>
             <header className="navbar-mobile">
-                <a className="logo" href="/"><img src="/LOGO.svg" alt="logo" /></a>
+                <a className="logo" href="/"><img src="./LOGO.svg" alt="logo" /></a>
                 <nav ref={navRef} className="middle-items">
                     <a className="middle" onClick={() => handleScrollToSection('projects-section')}>PROJECTS</a>
                     <a className="middle" onClick={() => handleScrollToSection('home-section')}>HOME</a>

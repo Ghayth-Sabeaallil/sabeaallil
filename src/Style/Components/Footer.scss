@@ -1,0 +1,68 @@
+@import "../Abstact/Colors";
+@import "../Mixin/Mixin";
+@media only screen and (min-width: 1024px) {
+  .container-footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    .copy-right{
+        color: $text;
+      @include ubuntu_bold_italic;
+      font-size: x-large;
+      text-shadow: 4px 0 $shadow, -4px 0 $shadow, 0 4px $shadow, 0 -4px $shadow,
+        3px 3px $shadow, -3px -3px $shadow, 3px -3px $shadow, -3px 3px $shadow;
+    }
+    .left-line {
+        border-bottom: 2px solid rgb(168, 166, 166);
+        width: calc(15.5vw + 15.5vh);
+    }
+    .right-line {
+        border-bottom: 2px solid rgb(168, 166, 166);
+        width: calc(15.5vw + 15.5vh);
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container-footer {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        .copy-right{
+            color: $text;
+          @include ubuntu_bold_italic;
+          font-size: larger;
+          text-shadow: 4px 0 $shadow, -4px 0 $shadow, 0 4px $shadow, 0 -4px $shadow,
+            3px 3px $shadow, -3px -3px $shadow, 3px -3px $shadow, -3px 3px $shadow;
+        }
+        .left-line {
+            border-bottom: 2px solid rgb(168, 166, 166);
+            width: calc(15.5vw + 15.5vh);
+        }
+        .right-line {
+            border-bottom: 2px solid rgb(168, 166, 166);
+            width: calc(15.5vw + 15.5vh);
+        }
+      }
+}
+@media only screen and (max-width: 767px) {
+    .container-footer {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        .copy-right{
+            color: $text;
+          @include ubuntu_bold_italic;
+          font-size: medium;
+          text-shadow: 4px 0 $shadow, -4px 0 $shadow, 0 4px $shadow, 0 -4px $shadow,
+            3px 3px $shadow, -3px -3px $shadow, 3px -3px $shadow, -3px 3px $shadow;
+        }
+        .left-line {
+            border-bottom: 2px solid rgb(168, 166, 166);
+            width: calc(7vw + 7vh);
+        }
+        .right-line {
+            border-bottom: 2px solid rgb(168, 166, 166);
+            width: calc(7vw + 7vh);
+        }
+      }
+}

@@ -4,16 +4,15 @@ const Skills = () => {
     return (
         <>
             <div className="container-skills" id="skill-section">
+                <div className="right-div-skills">
+                    <h1 className="name">Skills</h1>
+                </div>
                 <div className="left-div-skills">
                     {skills.map((skill) => (<>
                         <div className="circle">
                             <img alt={skill} src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${skill}/${skill}-original.svg`} />
                         </div>
                     </>))}
-
-                </div>
-                <div className="right-div-skills">
-                    <h1 className="name">Skills</h1>
                 </div>
             </div>
         </>

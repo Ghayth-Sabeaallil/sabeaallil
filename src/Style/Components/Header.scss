@@ -48,7 +48,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em 0em 0em 0em;
+    padding: calc(0.7vw + 0.7vh) 0em calc(0.7vw + 0.7vh) 0em;
+    img{
+      width: calc(2vw + 2vh);
+    height: calc(2vw + 2vh);
+    }
   }
 }
 }
@@ -101,7 +105,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em 0em 0em 0em;
+    padding: calc(0.7vw + 0.7vh) 0em calc(0.7vw + 0.7vh) 0em;
+    img{
+      width: calc(2vw + 2vh);
+    height: calc(2vw + 2vh);
+    }
   }
 }
 }
@@ -169,7 +177,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1em 0em 0em 0em;
+      padding: calc(0.7vw + 0.7vh) 0em calc(0.7vw + 0.7vh) 0em;
+    img{
+      width: calc(2vw + 2vh);
+    height: calc(2vw + 2vh);
+    }
     }
 
     .active {
